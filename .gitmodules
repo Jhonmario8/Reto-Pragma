@@ -1,0 +1,6 @@
+[submodule "service-user"]
+	path = service-user
+	url = https://github.com/Jhonmario8/service-user.git
+[submodule "plazoleta-service"]
+	path = plazoleta-service
+	url = https://github.com/Jhonmario8/plazoleta-service.git
