@@ -4,3 +4,9 @@
 [submodule "plazoleta-service"]
 	path = plazoleta-service
 	url = https://github.com/Jhonmario8/plazoleta-service.git
+[submodule "plazoleta-service"]
+	path = msg-service
+	url = https://github.com/Jhonmario8/msg-service.git
+[submodule "msg-service"]
+	path = msg-service
+	url = https://github.com/Jhonmario8/msg-service.git
