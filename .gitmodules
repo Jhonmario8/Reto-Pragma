@@ -1,6 +1,3 @@
-[submodule "service-user"]
-	path = service-user
-	url = https://github.com/Jhonmario8/service-user.git
 [submodule "msg-service"]
 	path = msg-service
 	url = https://github.com/Jhonmario8/msg-service.git
@@ -10,3 +7,6 @@
 [submodule "plazoleta-service"]
 	path = plazoleta-service
 	url = https://github.com/Jhonmario8/plazoleta-service.git
+[submodule "user-service"]
+	path = user-service
+	url = https://github.com/Jhonmario8/service-user.git
