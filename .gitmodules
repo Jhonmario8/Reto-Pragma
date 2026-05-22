@@ -10,3 +10,6 @@
 [submodule "msg-service"]
 	path = msg-service
 	url = https://github.com/Jhonmario8/msg-service.git
+[submodule "tracebility"]
+	path = tracebility
+	url = https://github.com/Jhonmario8/traceability-service.git
