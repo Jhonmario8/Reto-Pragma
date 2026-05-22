@@ -7,3 +7,6 @@
 [submodule "tracebility"]
 	path = tracebility
 	url = https://github.com/Jhonmario8/traceability-service.git
+[submodule "plazoleta-service"]
+	path = plazoleta-service
+	url = https://github.com/Jhonmario8/plazoleta-service.git
