@@ -2,7 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/msg-service" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/plazoleta-service" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/service-user" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tracebility" vcs="Git" />
   </component>
 </project>
