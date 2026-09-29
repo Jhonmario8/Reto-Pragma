@@ -20,7 +20,7 @@ Cada servicio es un proyecto Spring Boot independiente, con su propio repositori
 
 - Es un proyecto de práctica, hecho como parte del Reto Pragma.
 - No está desplegado. Está pensado para ejecutarse en local.
-- Cada servicio tiene tests unitarios de sus casos de uso con JUnit 5 y Mockito. No hay tests de integración ni de extremo a extremo.
+- Cada servicio tiene tests unitarios de sus casos de uso con JUnit 5 y Mockito. `plazoleta-service` además tiene un `@WebMvcTest` de las reglas de `SecurityConfig`. No hay tests de integración contra base de datos ni de extremo a extremo.
 - No hay Docker Compose ni pipeline de CI.
 
 ## Microservicios
@@ -144,7 +144,7 @@ En cada servicio:
 ./gradlew build
 ```
 
-Los tests son unitarios: mockean los puertos con Mockito, no levantan el contexto de Spring y no se conectan a MySQL, MongoDB, Twilio ni a otros servicios. El build pasa sin variables de entorno ni bases de datos.
+Los tests son unitarios: mockean los puertos con Mockito y no levantan el contexto de Spring. La única excepción es `SecurityConfigTest` en plazoleta-service, un `@WebMvcTest` que solo carga la capa web. Ninguno se conecta a MySQL, MongoDB, Twilio ni a otros servicios. El build pasa sin variables de entorno ni bases de datos.
 
 ## Deuda técnica conocida
 
@@ -157,7 +157,7 @@ Nombres inconsistentes que se mantienen por ahora para no romper referencias:
 - En `plazoleta-service` el paquete de entidades JPA se llama `entites`.
 - `traceability-service` usa Spring Boot 4 y los demás Spring Boot 3.
 
-En el README de cada servicio hay una sección "Limitaciones conocidas" con los comportamientos detectados al escribir los tests.
+En el README de cada servicio hay una sección "Deuda técnica conocida" con los hallazgos de las rondas de tests que siguen pendientes.
 
 ## Autor
 
